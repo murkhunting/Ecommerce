@@ -14,12 +14,25 @@ const Navbar = () => {
             <ul className="navbar-links">
                 <li>
                     <Link to="/cart">
-
+                        {/* icon */}
+                        <i className=""></i>
+                        Cart
+                        <span className="cartlogo-badge">0</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/">
+                        Shop
                     </Link>
                 </li>
             </ul>
 
             {/* hamburger menu */}
+            <div className="hamburger-manu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     )
 }
