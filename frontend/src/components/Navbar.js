@@ -7,28 +7,30 @@ const Navbar = () => {
         <nav className="navbar">
             {/* logo */}
             <div className="navbar-logo">
-                <h2>Ecommerce</h2>
+                <h2>ECOMMERCE</h2>
             </div>
 
             {/* links */}
             <ul className="navbar-links">
                 <li>
-                    <Link to="/cart">
-                        {/* icon */}
-                        <i className=""></i>
-                        Cart
-                        <span className="cartlogo-badge">0</span>
+                    <Link to="/" >
+                        Shop
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
-                        Shop
+                    <Link to="/cart" className="cart-link">
+                        {/* icon */}
+                        <img src="../images/cart.png" alt="c" className="cart-icon"/>
+                        <span>
+                            Cart
+                            <span className="cart-badge">0</span>
+                        </span>
                     </Link>
                 </li>
             </ul>
 
             {/* hamburger menu */}
-            <div className="hamburger-manu">
+            <div className="hamburger-menu">
                 <div></div>
                 <div></div>
                 <div></div>
