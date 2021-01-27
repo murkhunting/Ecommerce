@@ -1,0 +1,73 @@
+.cartitem {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr 1fr;
+    gap: 8px;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 2px;
+    place-items: center;
+}
+
+.item-image {
+    width: 90px;
+    height: auto;
+}
+
+.item-name {
+    text-decoration: none;
+    color: black
+}
+
+.item-name:hover {
+    color:cadetblue;
+}
+
+.item-select {
+    padding: 6px;
+}
+
+.item-deletebtn {
+    padding: 10px 17px;
+    background: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.item-deletebtn:hover,
+.item-deletebtn:focus,
+.item-deletebtn:active {
+    background: rgb(173, 212, 214);
+    transform: scale(1.1);
+}
+
+.item-deletebtn img {
+    width: 25px;
+}
+
+@media (max-width:600px) {
+    .item-name {
+        font-size: 0.8rem;
+    }
+    .item-select,
+    .item-deletebtn {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+    .item-price{ 
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:420px) {
+    .item-select,
+    .item-deletebtn {
+        padding: 3px;
+        font-size: 0.6rem;
+    }
+    
+}
