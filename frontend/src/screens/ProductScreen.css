@@ -2,6 +2,7 @@
     max-width: 13000px;
     margin: 1rem auto;
     display:flex;
+    background: rgb(143, 181, 182);
 }
 
 .product-left{
@@ -12,6 +13,10 @@
 .left-image {
     margin: 1rem;
     flex: 0.6;
+}
+
+img{
+    border-radius: 2%;
 }
 
 .left-info {
@@ -34,7 +39,7 @@
 }
 
 .left-info > p:last-chind,
-.left-info > p:last-chind {
+.right-info > p:last-chind {
     border: none;
 }
 
@@ -53,12 +58,12 @@
     padding: 1rem;
     font-size: 0.8rem;
     display: grid;
-    grid-template-columns: repet(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
 .right-info p > button {
-    grid-column: 1/1;
+    grid-column: 1/-1;
     padding: 10px 16px;
     display: block;
     width: 100%;
@@ -71,6 +76,7 @@
     font-size: 1rem;
     border-radius: 50px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
 }
 
 .right-info p > button:hover {
@@ -84,18 +90,19 @@
 }
 
 @media (max-width: 960px) {
-    .productscreen{
+    .productscreen {
         flex-direction:column;
     }
 
-    .product-left{
+    .product-left {
        flex-direction: column;
        flex: 1;
     }
     
-    .left-image{
+    .left-image {
         flex:1;
     }
+
     .left-info {
         flex:1;
     }
