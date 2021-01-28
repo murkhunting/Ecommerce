@@ -1,4 +1,4 @@
-//make the http request to the backend to get the products detailsa and add it to the cart
+//make the http request to the backend to get the products details and add it to the cart
 import * as actionTypes from "../constants/cartConstants"
 import axios from "axios";
 
