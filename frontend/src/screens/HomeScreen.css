@@ -29,6 +29,12 @@
 }
 
 @media (max-width: 630px){
+    .homescreen{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .products {
         grid-template-columns: 1fr;
     }

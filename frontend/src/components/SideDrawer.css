@@ -1,7 +1,7 @@
 .sidedrawer{
     width:60%;
     height: 100vh;
-    background: white;
+    background: rgb(143, 181, 182);
     position: fixed;
     top:0;
     left:0;
@@ -41,7 +41,7 @@
 }
 
 .sidedrawer-links > li > a:hover {
-    background: cadetblue;
+    background: white;
 }
 
 .sidedrawer-links > li > a > span {
