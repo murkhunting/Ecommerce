@@ -9,6 +9,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json({ message: "API running..." });
+  });
+
 //routes
 app.use('/api/products', productRoutes);
 

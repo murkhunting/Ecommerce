@@ -1,14 +1,14 @@
 import * as actionTypes from "../constants/productConstants";
 
 //get all the products reducer
-export const getProductsReducer = (state = { products: []}, action) => {
-    switch(action.type) {
+export const getProductsReducer = (state = { products:[] }, action) => {
+    switch (action.type) {
         case actionTypes.GET_PRODUCTS_REQUEST:
             return {
                 loading: true,
                 products: []
             }
-        case actionTypes.GET_PRODUCTS_SUCCES:
+        case actionTypes.GET_PRODUCTS_SUCCESS:
             return {
                 loading: false,
                 product: action.payload
@@ -26,12 +26,12 @@ export const getProductsReducer = (state = { products: []}, action) => {
 // get single proyect reducer
 
 export const getProductDetailsReducer = (state = { product: {}}, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case actionTypes.GET_PRODUCT_DETAILS_REQUEST:
             return {
                 loading: true,
             }
-        case actionTypes.GET_PRODUCT_DETAILS_SUCCES:
+        case actionTypes.GET_PRODUCT_DETAILS_SUCCESS:
             return {
                 loading: false,
                 product: action.payload

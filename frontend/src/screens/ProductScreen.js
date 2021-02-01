@@ -1,7 +1,19 @@
 import React from 'react';
 import "./ProductScreen.css"
+import {useState, useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 
-const ProductScreen = () => {
+//Actions
+import { getProductDetails } from "../redux/actions/productActions";
+import { addToCart} from "../redux/actions/cartActions";
+
+const ProductScreen = (match, history) => {
+
+    const [qty, setQty] = useState(1);
+    const dispatch = useDispatch();
+
+    const productDetails = useSelector(state => state.getProductDetails);
+    
     return (
         <div className="productscreen">
             <div className="product-left">
